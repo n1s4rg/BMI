@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BIe-ut-WLO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wuleqian_1130833" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your dog's age to convert into human age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPI-uD-cqa">
+                                <rect key="frame" x="20" y="310" width="374" height="57.5"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqt-rG-fX8">
+                                <rect key="frame" x="41" y="632" width="332" height="80"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.62745098040000002" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Q9K-YJ-IdK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnA-n1-pne">
+                                <rect key="frame" x="117" y="552" width="182" height="41"/>
+                                <color key="backgroundColor" red="0.68525165320000003" green="0.54376492519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Check it out!"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DT-LF-t79">
+                                <rect key="frame" x="117" y="476" width="182" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogs_age" translatesAutoresizingMaskIntoConstraints="NO" id="Ldv-2D-1jb">
+                                <rect key="frame" x="20" y="0.0" width="374" height="266"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqt-rG-fX8" firstAttribute="top" secondItem="FnA-n1-pne" secondAttribute="bottom" constant="39" id="2cy-Ub-PKi"/>
+                            <constraint firstItem="QPI-uD-cqa" firstAttribute="centerX" secondItem="Xqt-rG-fX8" secondAttribute="centerX" id="3nh-aZ-sZv"/>
+                            <constraint firstItem="Ldv-2D-1jb" firstAttribute="trailing" secondItem="QPI-uD-cqa" secondAttribute="trailing" id="7BT-VA-cRC"/>
+                            <constraint firstItem="QPI-uD-cqa" firstAttribute="top" secondItem="Ldv-2D-1jb" secondAttribute="bottom" constant="44" id="7fm-HD-UdA"/>
+                            <constraint firstItem="Ldv-2D-1jb" firstAttribute="leading" secondItem="QPI-uD-cqa" secondAttribute="leading" id="A5s-E8-HXj"/>
+                            <constraint firstItem="6DT-LF-t79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="GeC-Tu-WJQ"/>
+                            <constraint firstItem="Ldv-2D-1jb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KNS-X7-9Vd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xqt-rG-fX8" secondAttribute="bottom" constant="101" id="Q3H-mB-h0x"/>
+                            <constraint firstItem="6DT-LF-t79" firstAttribute="leading" secondItem="FnA-n1-pne" secondAttribute="leading" id="Udh-nw-zx2"/>
+                            <constraint firstItem="6DT-LF-t79" firstAttribute="trailing" secondItem="FnA-n1-pne" secondAttribute="trailing" id="VTQ-MQ-Kd6"/>
+                            <constraint firstItem="Xqt-rG-fX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="gDu-np-cyy"/>
+                            <constraint firstItem="Ldv-2D-1jb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-88" id="ltK-MS-iXp"/>
+                            <constraint firstItem="Ldv-2D-1jb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="njC-S2-AQT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6DT-LF-t79" secondAttribute="trailing" constant="115" id="x2l-fN-Ayk"/>
+                            <constraint firstItem="FnA-n1-pne" firstAttribute="top" secondItem="6DT-LF-t79" secondAttribute="bottom" constant="42" id="zcH-6L-cIt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sVM-hS-kMU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2859.4202898550725" y="97.767857142857139"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="sBx-tO-acE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="xMA-sN-S5p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="paV-ih-OH4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zsA-Ra-7BC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ahp-c9-v6B" kind="relationship" relationship="rootViewController" id="i3Z-A6-41O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFa-Zk-kbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="97.767857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tAB-n2-5sV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BIe-ut-WLO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6CF-yT-W1f">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xMA-sN-S5p" kind="relationship" relationship="viewControllers" id="G6X-8f-tm2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smT-lU-d0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="In9-Wx-JAO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ahp-c9-v6B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="c9R-EI-5qP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tTO-JQ-P0U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NKq-5I-MZg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDc-rX-Tr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dogs_age" width="424" height="266"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
